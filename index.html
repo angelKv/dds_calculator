@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<title>ДДС Калкулатор</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h2>ДДС Калкулатор</h2>
+<input id="amount" placeholder="Въведи сума" type="number"/>
+<div class="radio-group">
+<label><input checked="" name="mode" type="radio" value="add"/> Със ДДС</label>
+<label><input name="mode" type="radio" value="remove"/> Без ДДС</label>
+</div>
+<select id="vat">
+<option value="20">20% ДДС</option>
+<option value="9">9% ДДС</option>
+</select>
+<select id="currency">
+<option value="лв">лв</option>
+<option value="€">€</option>
+</select>
+<div class="results">
+<div class="result-box"><h4>Нето</h4><p id="net">-</p></div>
+<div class="result-box"><h4>ДДС</h4><p id="vatAmount">-</p></div>
+<div class="result-box"><h4>Бруто</h4><p id="gross">-</p></div>
+<div class="result-box"><h4>Ставка</h4><p id="rate">-</p></div>
+</div>
+</div>
+	<script src="script.js"></script>
+</body>
+</html>
